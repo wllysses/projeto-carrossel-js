@@ -14,6 +14,11 @@ function mostrarImagem() {
 }
 
 setaVoltar.addEventListener('click', function() {
+
+    if(imagemAtual === 0) {
+        return
+    }
+
     imagemAtual--
 
     esconderImagem()
@@ -21,6 +26,11 @@ setaVoltar.addEventListener('click', function() {
 })
 
 setaAvancar.addEventListener('click', function() {
+
+    if(imagemAtual === imagensPainel.length - 1) {
+        return
+    }
+    
     imagemAtual++
 
     esconderImagem()
