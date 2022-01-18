@@ -83,3 +83,11 @@ body {
 .painel .seta.btn-avancar {
     right: 20px;
 }
+
+.painel .seta.btn-voltar:hover {
+    transform: rotate(180deg) scale(1.5);
+}
+
+.painel .seta.btn-avancar:hover {
+    transform: scale(1.5);
+}
